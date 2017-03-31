@@ -8,7 +8,7 @@ time_of_meetings: 10AM
 place_of_meetings: The Church
 header_image: /uploads/default_header.jpg
 logo: 
-leader:
+ministry_leader:
 ---
 
 IBC has Sunday school every Sunday morning at 10AM for various age groups.

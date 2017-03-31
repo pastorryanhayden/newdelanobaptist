@@ -8,7 +8,7 @@ time_of_meetings: Varies
 place_of_meetings: Varies
 header_image: /uploads/default_header.jpg
 logo: 
-leader:
+ministry_leader:
 ---
 
 Every week, IBC does local outreach and visitations on Saturdays at 10AM.
