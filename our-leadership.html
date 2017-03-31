@@ -1,0 +1,59 @@
+---
+layout: default
+featured_image: /uploads/default_header.jpg
+---
+
+{% if page.featured_image %}
+            <style>
+                .aboutPage__Title {
+                    background: url({{page.featured_image}}) no-repeat center center;
+                    background-size: cover;
+
+                }
+            </style>
+        {% else %}
+                <style>
+                    .aboutPage__Title {
+                        background: url({{site.default_about_image}}) no-repeat center center;
+                        background-size: cover;
+                    }
+                </style>
+        {% endif %}
+        
+<div class="aboutPage">
+    <div class="aboutPage__Title">
+        <h1 class="editable">About Us: Our Leadership &amp; Staff</h1>
+    </div><!--/aboutPage__Title-->
+    <div class="aboutPage__Content">
+
+        {% assign senior_pastor = site.leaders | where_exp:"leader",
+"leader.is_senior_pastor == true" %}
+{% assign leaders = site.leaders | where_exp:"leader",
+"leader.is_senior_pastor != true" %}
+       {% for leader in senior_pastor %}
+       <div class="leader senior">
+           <h3>{{leader.name}}</h3>
+           <h5 class="role">{{leader.position}}</h5>
+           {% if leader.thumbnail %}
+            <img class="thumbnail" src="{{leader.thumbnail}}" alt="">
+           {% endif %}
+           {% if leader.content %}
+           {{ leader.content | markdownify }}
+           {% endif %}
+           <div style="clear: right"></div>
+       </div><!--/senior-pastor-div-->
+       {% endfor %}
+       {% for leader in leaders %}
+       <div class="leader">
+           <h3>{{leader.name}}</h3>
+           <h5 class="role">{{leader.position}}</h5>
+           {% if leader.thumbnail %}
+            <img class="thumbnail" src="{{leader.thumbnail}}" alt="">
+           {% endif %}
+           {% if leader.content %}
+           {{ leader.content | markdownify }}
+           {% endif %}
+           <div style="clear: right"></div>
+       </div><!--/regular leader-div-->
+       {% endfor %}
+</div>

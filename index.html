@@ -1,0 +1,93 @@
+---
+layout: default
+main_image: http://dl.dropbox.com/u/47159282/0423-2.jpg
+---
+<style type="text/css">
+.hero {
+    background: url({{page.main_image}}) no-repeat top center;
+    min-height: 30vh;
+    background-size: cover;
+}
+
+</style>
+
+<div class="hero">
+    <div class="hero__box editable">
+        <h3 class="study"  style="background: url(http://storage.biblebaptistmattoon.org/media/bible.png) no-repeat top center;">A Bible preaching, people loving, gospel sharing church in Delano, CA.</h3>
+    </div>
+    <p><i class="fa fa-angle-double-down"></i></p>
+</div><!--/hero-->
+<div class="visitor-section">
+    <div class="wrapper">
+        <h2 class="editable">We'd love to have you visit this Sunday.</h2>
+        <a href="{{site.url}}welcome.html" class="button visitor-button"> <i class="fa fa-heart"></i> Info for Visitors</a>
+    </div><!--/wrapper-->
+</div><!--/visitors-->
+<div class="currentSeries">
+    {% assign homeSeries = site.data.series | where_exp:"item",
+"item.title != 'No Series'" %}
+    {% assign homeSeriesOrdered = homeSeries | sort: 'sermon_date', 'last' %}
+    {% for item in homeSeriesOrdered limit: 2 %}
+    <div class="currentSeries__series">
+        <a href="{{site.url}}/{{ item.title | datapage_url: 'series'}}">{%if item.featured_image%}{% for img in item.featured_image %}<img src="{{ img.url }}" alt="sermon series graphic" class="thumbnail">{% endfor %}{% else %}<img src="http://placehold.it/240x240" alt="sermon series graphic" class="thumbnail">{%endif%}</a>
+        {% if item.service %}
+    <p>{{ item.service}}</p>
+        {% endif %}
+    <h3><a href="{{site.url}}/{{ item.title | datapage_url: 'series'}}">{{item.title}}</a></h3>
+    <p>{{ item.description | truncate: 100 }}</p>
+    </div><!--/currentSeries__series-->
+    {% endfor %}
+    <div class="currentSeries__explanation">
+        <p>Click either of the links above to listen to recent sermons from these series.</p>
+    </div><!--/currentSeries__explanation-->
+</div><!--/currentSeries-->
+<div class="homeMinistries">
+    <h1>Featured Ministries</h1>
+    {% assign homeMinistries = site.ministries | where:"show_on_home_page",true %}
+    {% for item in homeMinistries %}
+        {% if item.header_image %}
+                <div class="ministry" style="background: url({{item.header_image}}) no-repeat center center">
+        {% else %}
+            <div class="ministry" style="background: url({{site.data.settings.default_header_image}}) no-repeat center center">
+        {% endif %}
+
+        <div class="ministry2">
+        <div class="ministry__wrapper">
+            <div class="ministry__wrapper2">
+        <h2><a href="{{ item.url }}">{{item.title}}</a></h2>
+        <p>{{item.description | truncate: 140 }}</p>
+        <a class="button hollow" href="{{ item.url }}">Learn More</a>
+    </div><!--/ministry__wrapper2-->
+    </div><!--/ministry-wrapper-->
+    </div><!--/ministry2-->
+    </div><!--/ministry-->
+    {% endfor %}
+</div><!--/homeMinistries-->
+<div class="homeEvents">
+    <h2>Next Church Event</h2>
+    <div class="homeEvents__explanation">
+        <p class="editable">There is always something going on at Bible Baptist.  Here is what is coming up next:</p>
+        <a href="{{site.url}}/calendar-list.html" class="button"><i class="fa fa-calendar"></i>  View All Events</a>
+    </div><!--/homeEvents__explanation-->
+    {% for event in site.events limit: 1 %}
+    <div class="homeEvents__feature">
+        <a href="{{ event.url }}">
+            {% if event.featured_image %}
+            <img src="{{site.url}}/{{ event.featured_image }}" alt="{{ event.title }}" width="526" >
+            {% else %}
+            <img src="{{site.data.settings.default_calendar_image}}" alt="Default Featured Image - {{ event.event_name }}">
+            {% endif %}
+        </a>
+        <h3><a href="{{ event.url }}"> {{ event.title }} </a></h3>
+        <p class="date"> {{event.start_at | date: "%a, %B %d, %y"}} </p>
+    </div><!--/homeEvents__feature-->
+    {% endfor %}
+</div><!--/homeEvents-->
+<div class="homeLinks">
+    <ul class="quickLinks">
+        <li><a href="{{site.url}}/our-leadership.html"><i class="fa fa-user"></i> Meet Our Pastor</a></li>
+        <li><a href="{{site.url}}/media/blog-list.html"><i class="fa  fa-th-list"></i> Read Blog Posts</a></li>
+        <li><a href="{{site.url}}/welcome.html"><i class="fa fa-map"></i> Get Directions</a></li>
+        <li><a href="{{site.url}}/the-gospel.html"><i class="fa fa-ambulance"></i> The Gospel</a></li>
+    </ul>
+</div>
