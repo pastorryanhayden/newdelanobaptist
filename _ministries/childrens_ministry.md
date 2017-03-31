@@ -1,5 +1,5 @@
 ---
-title: Children's Ministry
+title: "Children's Ministry"
 layout: ministry
 show_on_home_page: true
 group: Children
@@ -7,9 +7,10 @@ description: Sunday school classes and a loving nursery
 time_of_meetings: 10AM
 place_of_meetings: The Church
 header_image: /uploads/default_header.jpg
-logo: 
-ministry_leader:
+logo:
+ministry_leader: regina_castro
 ---
+
 
 IBC provides a loving nursery for your infants and toddlers during all services. IBC also has Sunday School classes for your children at 10AM (led by their respective Sunday school teachers).
 
