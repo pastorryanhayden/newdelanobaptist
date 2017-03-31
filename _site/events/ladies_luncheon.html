@@ -15,6 +15,21 @@
   <link rel="alternate" type="application/rss+xml" title="California Theme" href="http://localhost:4000/feed.xml">
 </head>
 
+  <link href='//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/fullcalendar.min.css' rel='stylesheet' />
+  <link href='//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/fullcalendar.print.css' rel='stylesheet' media='print' />
+  <style>
+  .content-wrapper {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+  }
+  #calendar {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+</style>
   <body>
 
     <style type="text/css">
@@ -172,60 +187,25 @@
 <div class="off-canvas-content" data-off-canvas-content>
 
 
-
+      <div class="content-wrapper">
         
+<img src="/uploads/ladiesL.png" alt="Ladies Luncheon" />
 
 
-<style>
+<div class="calendar-details">
+<h1>Ladies Luncheon</h1>
+<div class="description">
+</div>
+<ul>
+    <li><i class="fa fa-calendar"></i> </li>
     
-.ministriesPage__Title {
-background: url(/uploads/default_header.jpg) no-repeat;
-background-size: cover;
-}
-    
-
-</style>
+</ul>
+</div><!--/calendar-details-->
 
 
 
 
-<div class="ministriesPage">
-    <div class="ministriesPage__Title">
-        <h1>Music Program</h1>
-        <div class="ministriesDescription">
-            <p>Our Musical Offerings</p>
-        </div><!--/ministriesDescription-->
-    </div><!--/ministriesPage__Title-->
-    <div class="ministriesPage__Content">
-        <div class="ministriesPage__Content-main-content">
-            <div class="ministryInfo">
-                <div class="ministryInfo-ministry">
-                
-                    <p><i class="fa fa-users"></i> Group: <span>N/A</span></p>
-                
-                
-                    <p><i class="fa fa-clock-o"></i> Meeting Time: <span>Varies</span></p>
-                
-                
-                    <p><i class="fa fa-map"></i> Meeting Place: <span>The Church</span></p>
-                
-                </div><!--ministryInfo-ministry-->
-                
-            </div><!--/ministryInfo-->
-            <p>IBC has a choir that performs during offering time. Sometimes, the choir performs as a whole, and sometimes, certain members of the choir perform as soloists, duets, trios, or quartets.</p>
-
-        </div><!--/ministriesPage__Content-main-content-->
-       
-        <div class="ministriesPage__Content-secondary-content">
-                
-                
-                
-                
-               
-        </div><!--/ministriesPage__Content-secondary-content-->
-    </div><!--/ministriesPage__Content-->
-</div><!--ministriesPage-->
-
+      </div>
     <footer>
     <div class="footer-wrapper">
         <div class="footer-info">
@@ -257,8 +237,42 @@ background-size: cover;
     </script>
 </body>
 </html>
-
+    <script src='//cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js'></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/fullcalendar.min.js'></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/gcal.js'></script>
+    <script>
+    $(document).ready(function(){
+    $('#calendar').fullCalendar({
+      header: {
+        left: 'prev,next today',
+        center: 'title',
+        right: 'month,agendaWeek,agendaDay'
+      },
+      navLinks: true, // can click day/week names to navigate views
+      editable: false,
+      eventLimit: true, // allow "more" link when too many events
+      eventColor: '#716558',
+      googleCalendarApiKey: 'AIzaSyBVd8t1-lhwkmXGfD9XRzE_85fcO5Fxa70',
+      eventSources: [
+      {events: [
+        
+            {
+                "title": "Ladies Luncheon",
+                "start": "",
+                "end": "",
+                "url": "/events/ladies_luncheon.html",
+                "allDay": "false",
+                "color" : "#BE552B"
+            },
+        
+            ]},
+        {
+          googleCalendarId: 'leonhart4@gmail.com'
+        }
+        ]
+    });
+    });
+    </script>
   </body>
 
 </html>
- 

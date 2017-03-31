@@ -33,10 +33,10 @@ collections:
     output: true
   ministry_leaders:
     output: false
-    _show_content: false
+    _hide_content: true
   events:
     output: true
-    _show_content: false
+    _hide_content: true
   leaders:
     output: false 
 
