@@ -7,9 +7,10 @@ description: Regular Bible studies for various groups in our church
 time_of_meetings: 10AM
 place_of_meetings: The Church
 header_image: /uploads/default_header.jpg
-logo: 
-ministry_leader:
+logo:
+ministry_leader: jon_roman
 ---
+
 
 IBC has Sunday school every Sunday morning at 10AM for various age groups.
 
@@ -22,5 +23,3 @@ There is currently no separate middler Bible class for the 10- to 12-year-olds. 
 Rafael Quevedo teaches the primary Bible class for 6- to 9-year-olds.
 
 Regina Castro teaches the beginner's Bible class for 3- to 5-year-olds.
-
-
