@@ -1,8 +1,8 @@
 church_name: Immanuel Baptist Church
 description:
 church_logo_image_path: /uploads/logo.png
-church_logo2_image_path: /uploads/logo2.jpg
-default_header_image: /uploads/logo2.jpg
+church_logo2_image_path:
+default_header_image:
 phone: 661-725-0479
 church_email: info@delanobaptist.org
 facebook: 'https://www.facebook.com/profile.php?id=100006405525766'
@@ -13,9 +13,9 @@ address2:
 City: Delano
 State: CA
 Zip: '93215'
-main_blog_image: /uploads/1.jpg
-main_sermon_image: /uploads/2.jpg
-default_calendar_image: /uploads/3.jpg
+main_blog_image:
+main_sermon_image:
+default_calendar_image:
 services:
   - name: Sunday School
     time_of_service: '10:00 am'
