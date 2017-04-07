@@ -2,13 +2,13 @@
 title: Sunday School
 layout: ministry
 show_on_home_page: true
-group: Whole church (Sunday)
+group:
 description: Regular Bible studies for various groups in our church
-time_of_meetings: 10AM
-place_of_meetings: The Church
+time_of_meetings:
+place_of_meetings:
 header_image: /uploads/default_header.jpg
 logo:
-ministry_leader: jon_roman
+ministry_leader:
 ---
 
 
