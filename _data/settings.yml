@@ -29,7 +29,7 @@ services:
   - name: Wednesday Prayer Meeting
     time_of_service: '7:00 pm'
     day: Wednesday
-lattitude: '16.7736028'
-longitude: '96.1604377'
-map_zoom_level: 13
+lattitude: '35.789745'
+longitude: '-119.239022'
+map_zoom_level: 16
 Google_calendar_id: ibc93215@gmail.com
