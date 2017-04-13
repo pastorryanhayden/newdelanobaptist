@@ -13,7 +13,7 @@ address2:
 City: Delano
 State: CA
 Zip: '93215'
-main_blog_image:
+main_blog_image: /uploads/immanuel.jpg
 main_sermon_image:
 default_calendar_image:
 services:
