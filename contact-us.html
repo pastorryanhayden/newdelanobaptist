@@ -1,6 +1,6 @@
 ---
 layout: default
-header_image: /uploads/welcome.jpg
+header_image: /uploads/default_header.jpg
 ---
 <style>
     .aboutPage__Title {
@@ -17,12 +17,11 @@ header_image: /uploads/welcome.jpg
     <div class="aboutPage__Content">
        <div class="contact-info">
 			<p class="intro editable">We'd love to hear from you.  You can either contact us with the information below or use this form:</p>
-       	<form action="https://formspree.io/{{site.data.settings.church_email}}"
-      method="POST" class="contact-form">
-    <input type="text" name="name" placeholder="name">
-    <input type="tel" name="phone" placeholder="phone">
-    <input type="email" name="_replyto" placeholder="email">
-    <input type="submit" value="Send" class="button">
+       	<form action="https://formspree.io/{{site.data.settings.church_email}}" method="POST" class="contact-form">
+    <input type="text" name="name" placeholder="name" />
+    <input type="tel" name="phone" placeholder="phone" />
+    <input type="email" name="_replyto" placeholder="email" />
+    <input type="submit" value="Send" class="button" />
 </form>
        </div><!--/contact-info-->
     </div><!--/aboutPage__Content-->
