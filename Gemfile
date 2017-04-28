@@ -15,7 +15,7 @@ gem 'airtable'
 gem 'bigdecimal'
 gem 'activesupport'
 gem "json"
-gem 'rmagick'
+# gem 'rmagick'
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
