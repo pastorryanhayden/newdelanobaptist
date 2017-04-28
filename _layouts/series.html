@@ -32,7 +32,7 @@ layout: default
         <div class="sermonslistItem">
             <div class="sermonslistItem__teaser">
             <div class="sermonslistItem__title">
-                <h3><a href="{{ sermon.title | datapage_url: 'sermons' | prepend: site.baseurl | prepend: site.url }}">{{sermon.title}}</a></h3>
+                <h3><a href="{{ site.url }}/{{ sermon.title | datapage_url: 'sermons' }}">{{sermon.title}}</a></h3>
                 <ul class="action__buttons">
                     {% if sermon.sermon_mp3 %}
                     {% for item in sermon.sermon_mp3 %}
@@ -67,7 +67,7 @@ layout: default
                 <a href="{{item.url}}" class="button warning" target="blank" download><i class="fa fa-download"></i> Download</a>
                 {% endfor %}
                 {% endif %}
-                <a href="{{ sermon.title | datapage_url: 'sermons' | prepend: site.baseurl | prepend: site.url }}" class="button" >View Sermon</a>
+                <a href="{{ site.url }}/{{ sermon.title | datapage_url: 'sermons' }}" class="button" >View Sermon</a>
             </div><!--/sermonslistItem__teaser-->
         </div><!--/sermonslistItem-->
         {% endif %}
