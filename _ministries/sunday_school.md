@@ -14,12 +14,12 @@ ministry_leader:
 
 IBC has Sunday school every Sunday morning at 10AM for various age groups.
 
-Jon Roman leads the adult Bible class in the sanctuary. He is currently teaching through the book of Acts.
+Jon Roman and Rafael Quevedo lead the adult Bible class in the sanctuary.&nbsp;
 
 Jay and Ellen Torres teach the youth Bible class for teenagers.
 
-There is currently no separate middler Bible class for the 10- to 12-year-olds. Currently, middler students join the primary Bible class.
+Yohanna Mehrethab teaches the middler Bible class for the 10- to 12-year-olds.&nbsp;
 
-Rafael Quevedo teaches the primary Bible class for 6- to 9-year-olds.
+Lisa Quevedo teaches the primary Bible class for 6- to 9-year-olds.
 
 Regina Castro teaches the beginner's Bible class for 3- to 5-year-olds.
