@@ -1,5 +1,5 @@
 ---
-title: "Children's Ministry"
+title: Children's Ministry
 layout: ministry
 show_on_home_page: true
 group: Children
@@ -14,8 +14,8 @@ ministry_leader: regina_castro
 
 IBC provides a loving nursery for your infants and toddlers during all services. IBC also has Sunday School classes for your children at 10AM (led by their respective Sunday school teachers).
 
-Regina Castro teaches the beginner’s Bible class for 3- to 5-year-olds.
+Regina Castro teaches the Beginner’s Bible class for 3- to 5-year-olds.
 
-Rafael Quevedo teaches the primary Bible class for 6- to 9-year-olds.
+Lisa Quevedo teaches the Primary Bible class for 6- to 9-year-olds.
 
-There is currently no separate middler Bible class for the 10- to 12-year-olds. Currently, middler students join the primary Bible class.
+Yohanna Mehrethab teaches the Middler Bible class for the 10- to 12-year-olds.&nbsp;
