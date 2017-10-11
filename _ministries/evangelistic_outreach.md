@@ -6,7 +6,7 @@ group: Everyone
 description: Our weekly evangelism program
 time_of_meetings: Varies
 place_of_meetings: Varies
-header_image: /uploads/untitled.png
+header_image: /uploads/earth-cover2.jpg
 logo:
 ministry_leader: enrique_castro
 ---
