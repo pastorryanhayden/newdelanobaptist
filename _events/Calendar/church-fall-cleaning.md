@@ -1,7 +1,7 @@
 ---
 published: true
-start_at: 2017-10-07 08:00:00
-end_at: 2017-10-07 14:00:00
+start_at: 2017-10-14 08:00:00
+end_at: 2017-10-14 14:00:00
 all_day: false
 location: Immanuel Baptist Church
 description_markdown:
