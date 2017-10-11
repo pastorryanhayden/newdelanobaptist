@@ -1,5 +1,5 @@
 ---
-title:
+title: Music Program
 layout: ministry
 show_on_home_page: false
 group: N/A
