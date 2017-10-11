@@ -6,7 +6,7 @@ group:
 description:
 time_of_meetings:
 place_of_meetings: Immanuel Baptist Church
-header_image: /uploads/1474.jpg
+header_image: /uploads/mbs-banner-2017.jpg
 logo:
 ministry_leader: enrique_castro
 ---
