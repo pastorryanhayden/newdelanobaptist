@@ -6,7 +6,7 @@ group: N/A
 description: Our Musical Offerings
 time_of_meetings: Varies
 place_of_meetings: The Church
-header_image: /uploads/default_header.jpg
+header_image: /uploads/img-20170618-113222.jpg
 logo:
 ministry_leader: jon_roman
 ---
