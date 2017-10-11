@@ -1,12 +1,12 @@
 ---
 published: true
-start_at:
-end_at:
+start_at: 2017-11-05 13:00:00
+end_at: 2017-11-05 15:00:00
 all_day: false
-location:
+location: Immanuel Baptist Church
 description_markdown:
 ministry:
-featured_image:
+featured_image: /uploads/mens-bible-study.jpg
 page_markdown:
 layout: single_event
 ---
