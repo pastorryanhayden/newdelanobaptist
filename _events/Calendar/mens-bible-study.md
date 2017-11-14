@@ -8,6 +8,6 @@ description_markdown:
 ministry: mens-bible-study
 featured_image: /uploads/mens-bible-study.jpg
 page_markdown:
-layout: single_event
+layout: ministry
 ---
 
